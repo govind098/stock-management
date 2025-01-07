@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
 import Stocks from "./pages/Stocks";
 import Orders from "./pages/Orders";
+import Furniture from "./pages/Furniture";
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/stocks" element={<Stocks />} />
             <Route path="/orders" element={<Orders />} />
+            <Route path="/furnitures" element={<Furniture />} />
+
           </Routes>
         </div>
       </div>
@@ -23,3 +26,5 @@ const App = () => {
 };
 
 export default App;
+
+

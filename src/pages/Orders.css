@@ -1,7 +1,9 @@
+
+
 .orders-page {
+    font-family: Arial, sans-serif;
     padding: 20px;
-    background: #f3f3f3;
-    border-radius: 8px;
+    background-color: #f9f9f9;
 }
 
 .header {
@@ -11,52 +13,172 @@
     margin-bottom: 20px;
 }
 
+.header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
 .actions {
     display: flex;
     gap: 10px;
 }
 
 .search-bar {
-    padding: 5px;
-    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
     border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .export-btn,
 .new-order-btn {
-    background: #6c63ff;
+    padding: 8px 12px;
+    font-size: 14px;
     color: white;
+    background-color: #007bff;
     border: none;
-    padding: 8px 15px;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.export-btn:hover,
+.new-order-btn:hover {
+    background-color: #0056b3;
 }
 
 .orders-table {
     width: 100%;
     border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .orders-table th,
 .orders-table td {
+    padding: 12px;
+    text-align: left;
     border: 1px solid #ddd;
-    padding: 10px;
+}
+
+.orders-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.orders-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.orders-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.view-btn,
+.delete-btn {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .view-btn {
-    background: #007bff;
+    background-color: #17a2b8;
     color: white;
-    border: none;
-    padding: 5px;
-    border-radius: 4px;
-    cursor: pointer;
+}
+
+.view-btn:hover {
+    background-color: #117a8b;
 }
 
 .delete-btn {
-    background: #ff4d4d;
+    background-color: #dc3545;
     color: white;
+}
+
+.delete-btn:hover {
+    background-color: #d61326;
+}
+
+/* Popup Styling */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.popup h3 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.confirm-btn,
+.cancel-btn {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 14px;
     border: none;
-    padding: 5px;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.confirm-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.confirm-btn:hover {
+    background-color: #218838;
+}
+
+.cancel-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #5a6268;
 }
