@@ -17,7 +17,7 @@ const Sidebar = () => {
             <ul className="sidebar-menu">
                 <li>
                     <Link to="/" className="menu-item">
-                        {/* <i className="icon">🏠</i> */}
+                        
                         <i className="material-icons"> home</i>
                         Home
                     </Link>

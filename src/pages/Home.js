@@ -15,14 +15,14 @@ const Home = () => {
 
     return (
         <div className="home-container">
-            {/* Sidebar remains unchanged */}
+           
 
             <div className="home-content">
                 {/* Daily Draft Section */}
                 <div className="daily-draft">
-                    <h3>Daily Demand Draft</h3>
+                    <h3>Daily Demand</h3>
                     <textarea
-                        placeholder="Write your draft here..."
+                        placeholder="Write your demand here..."
                         rows="10"
                         cols="30"
                         className="draft-textarea"
